@@ -1,0 +1,12 @@
+#highlights {
+  margin-top: 1.6rem;
+  max-width: 32.8rem;
+  margin-inline: auto;
+}
+
+@media (width >= 1280px) {
+  #highlights {
+    margin-top: 4rem;
+    max-width: initial;
+  }
+}
