@@ -29,6 +29,10 @@ body {
   background-color: var(--bg-color);
 }
 
+main {
+  margin-bottom: 4rem;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -65,5 +69,9 @@ li {
 
   .container {
     padding-inline: 3.2rem;
+  }
+
+  main {
+    margin-bottom: 8rem;
   }
 }

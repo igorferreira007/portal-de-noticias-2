@@ -43,8 +43,16 @@
       font: var(--h1);
       height: 9.6rem;
       overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
+}
+
+.grid-cols-2 .card h2 {
+  font-size: 1.4rem;
+  height: 6rem;
 }
 
 .grid-flow-col > .card {

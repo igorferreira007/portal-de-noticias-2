@@ -4,9 +4,153 @@
   margin-inline: auto;
 }
 
+#most-read {
+  border-top: 1px solid var(--stroke-color);
+  margin-top: 3.2rem;
+
+  max-width: 32.8rem;
+  margin-inline: auto;
+
+
+  & header {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
+
+  & header * {
+    color: var(--text-color-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  & > div {
+    margin-top: 2.4rem;
+    gap: 3.2rem;
+  }
+
+  & figure {
+    position: relative;
+
+    & span {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+      display: inline-block;
+      background-color: var(--brand-color-dark);
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.4rem;
+      text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.2rem;
+      letter-spacing: 0.4px;
+    }
+
+    & img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    & figcaption {
+      font: var(--h2);
+      margin-top: 0.8rem;
+      height: 6.6rem;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3; /* Define o número máximo de linhas */
+      -webkit-box-orient: vertical; /* Configura a orientação do texto */
+    }
+  }
+}
+
+#ia {
+  border-top: 1px solid var(--stroke-color);
+
+  & header {
+    margin-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
+
+  & header * {
+    color: var(--text-color-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  & header + div {
+    margin-top: 2.4rem;
+  }
+}
+
+#ia-and-aside {
+  margin-top: 3.2rem;
+}
+
+#ads-aside {
+  
+  & header {
+    margin-top: 3.2rem;
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--stroke-color);
+
+    & a {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+  }
+
+  & header * {
+    color: var(--text-color-secondary);
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  & header + div {
+    margin-top: 2.4rem;
+  }
+
+  & .banner {
+    & img {
+      width: 100%;
+      border-radius: .4rem;
+    }
+  }
+}
+
 @media (width >= 1280px) {
   #highlights {
     margin-top: 4rem;
     max-width: initial;
+  }
+
+  #most-read {
+    margin-top: 8rem;
+    max-width: initial;
+
+    & > div {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  #ia-and-aside {
+    margin-top: 8rem;
+    grid-template-columns: 1.5fr 1fr;
   }
 }
